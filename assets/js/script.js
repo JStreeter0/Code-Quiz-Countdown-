@@ -75,7 +75,7 @@ var questions = [
 
 // state variables
 var questionIndex = 0;
-var time = 60;
+var time = 120;
 var timerId;
 
 // activate quiz
