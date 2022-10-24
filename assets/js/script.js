@@ -13,62 +13,62 @@ var leaderboarBtnEl = document.querySelector("#view-top-scores");
 var questions = [
   {
     prompt: "what are the data types supported by JavaScript?",
-    options: ["1.undefined, null, boolean, string, attributes, number, object", "2.undefined, null, boolean, string, symbols, number, object", "3.undefined, flurps , boolean, string, symbols, number, object", "4.undefined, null, boolean, string, attrributes, number, emojis"],
-    answer: "2.undefined, null, boolean, string, symbols, number, object"
+    options: ["undefined, null, boolean, string, attributes, number, object", "undefined, null, boolean, string, symbols, number, object", "undefined, flurps , boolean, string, symbols, number, object", "undefined, null, boolean, string, attrributes, number, emojis"],
+    answer: "undefined, null, boolean, string, symbols, number, object"
       
   },
   {
     prompt: "What is NaN property in JavaScript?",
-    options: ["1.Not-a-Nugget", "2.Not-a-Neutral", "3.Not-a-Number", "4.none of the above"],
-    answer: "3.Not-a-Number"
+    options: ["Not-a-Nugget", "Not-a-Neutral", "Not-a-Number", "none of the above"],
+    answer: "Not-a-Number"
       
   },
   {
     prompt: "What company developed JavaScript?",
-    options: ["1.NetScape", "2.AltaVista", "3.GeoCities", "4.GnatScape"],
-    answer: "1.NetScape"
+    options: ["NetScape", "AltaVista", "GeoCities", "GnatScape"],
+    answer: "NetScape"
       
   },
   {
     prompt: "What is an undeclared variable?",
-    options: ["1.variable that does not exist in a program and are not declared", "2.variables that are declared in the program but have not been given any value", "3. variables that want to remain nameless", "4.variables that exist in the program but are being quiet about it"],
-    answer: "1.variable that does not exist in a program and are not declared"
+    options: ["variable that does not exist in a program and are not declared", "variables that are declared in the program but have not been given any value", " variables that want to remain nameless", "variables that exist in the program but are being quiet about it"],
+    answer: "variable that does not exist in a program and are not declared"
       
   },
   {
     prompt: "What is an undefined variable?",
-    options: ["1.crouching variable, hidden definition", "2.variables that are hipsters that are against labels", "3.variables that do not exist in a program and are not declared", "4.variables that are declared in the program but have not been given any value"],
-    answer: "4.variables that are declared in the program but have not been given any value"
+    options: ["crouching variable, hidden definition", "variables that are hipsters that are against labels", "variables that do not exist in a program and are not declared", "variables that are declared in the program but have not been given any value"],
+    answer: "variables that are declared in the program but have not been given any value"
       
   },
   {
     prompt: "What is a prompt box?",
-    options: ["1. A mailed mystery box for coders", "2. A box that allows the user to enter input by providing a text box", "3.A box that allows the user to get an answer in a timely fashion", "4.none of the above"],
-    answer: "2.dumplings"
+    options: [" A mailed mystery box for coders", " A box that allows the user to enter input by providing a text box", "A box that allows the user to get an answer in a timely fashion", "none of the above"],
+    answer: "dumplings"
       
   },
   {
     prompt: "Which symbol is used for comments in JavaScript?",
-    options: ["1.// for single line, /* */ for multi line comments", "2.<!-- --> for single line, <<!-- -->> for multi line comments", "3./* */ for single line, // for multi line comments", "4. || for single line, && for multi line comments"],
-    answer: "1. // for single line, /* */ for multi line comments"
+    options: ["// for single line, /* */ for multi line comments", "<!-- --> for single line, <<!-- -->> for multi line comments", "/* */ for single line, // for multi line comments", " || for single line, && for multi line comments"],
+    answer: " // for single line, /* */ for multi line comments"
       
   },
   {
     prompt: "What does Null mean in JavaScript?",
-    options: ["1.Not Under Loss Leader", "2. The value represents a value of an exceptional object", "3.The value represents no value or no object", "4.none of the above"],
-    answer: "3.The value represents no value or no object"
+    options: ["Not Under Loss Leader", " The value represents a value of an exceptional object", "The value represents no value or no object", "none of the above"],
+    answer: "The value represents no value or no object"
       
   },
   {
     prompt: "What are all the types of Pop up boxes available in JavaScript?",
-    options: ["1.Alert, Conform, and Prompt", "2.Poke, Stop, and Confirm", "3.Alert, Confirm, and Prompt", "4. Fast, Slow, and Somewhere in between"],
-    answer: "3.Alert, Confirm, and Prompt"
+    options: ["Alert, Conform, and Prompt", "Poke, Stop, and Confirm", "Alert, Confirm, and Prompt", " Fast, Slow, and Somewhere in between"],
+    answer: "Alert, Confirm, and Prompt"
       
   },
   {
     prompt: "What is Global Scope?",
-    options: ["1.A variable declared within a JavaScript function", "2.A variable declared outside a function", "3.A scope used by PitBull AKA 'Mr. Worldwide'", "4.none of the above"],
-    answer: "2. A variable declared outside a function"
+    options: ["A variable declared within a JavaScript function", "A variable declared outside a function", "A scope used by PitBull AKA 'Mr. Worldwide'", "none of the above"],
+    answer: "A variable declared outside a function"
       
   }
 ];
