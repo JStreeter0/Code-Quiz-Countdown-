@@ -163,6 +163,7 @@ function saveHighscore() {
     };
     highscores.push(newScore);
     window.localStorage.setItem("highscores", JSON.stringify(highscores));
+    submitBtnEl.onclick = alert("score saved! Please click Leaderboard to view!"); 
   }
 }
 
@@ -176,6 +177,7 @@ initialsEl.onkeyup = checkForEnter;
 
 
 submitBtnEl.onclick = saveHighscore;
+
 
 
 startBtn.onclick = startQuiz;
