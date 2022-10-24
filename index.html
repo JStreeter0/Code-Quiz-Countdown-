@@ -2,60 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code Quiz Panic</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Code Quiz Panic!</title>
   </head>
+
   <body>
-    <!-- highscore button and timer header-->
     <header>
-      <button class="gameScores">HighScores</button>
-      <div class="timer">Timer: 60</div>
-    </header>
-    <main>
-      <!-- opening page screen -->
-      <section class="Start-Screen">
-        <h1>Code Quiz Panic</h1>
+      <!-- highscore link -->
+      <section>
+        <a href="score.html"
+          ><button class="Leaderboard" id="view-top-scores">
+            Leaderboard
+          </button></a
+        >
+      </section>
+      <!-- timer countdown -->
+      <section class="timer">
         <p>
-          Click start game to begin the timed quiz on Javascript fundementals
+          <strong>
+            Time remaining:
+            <span id="timerCountDown"></span>
+          </strong>
         </p>
-        <button class="startGame" id="startButton">Start Game</button>
       </section>
-      <!-- quiz page Q and A -->
-      <section class="Quiz">
-        <div id="Question"></div>
-        <p><button id="answer1"></button></p>
-        <p><button id="answer2"></button></p>
-        <p><button id="answer3"></button></p>
-        <p><button id="answer4"></button></p>
-        <div id="Check"></div>
+    </header>
+    <!-- main quiz start page-->
+    <main class="quiz">
+      <section id="quiz-start">
+        <div class="main-page" id="starting-page">
+          <h1>Code Quiz Panic!</h1>
+          <p>Ready?</p>
+          <button id="start">Lets Begin</button>
+        </div>
       </section>
-      <!-- Results page -->
-      <section class="Results">
-        <h2>Nice Work!</h2>
-        <span id="finalTime">Final Time: 22</span>
-        <form>
-          <p>Enter Initials:</p>
-          <input id="Initials" type="text" />
-          <button type="submit" class="startGame" id="submitScore">
-            Submit
-          </button>
-        </form>
+      <!-- quiz prompts, options and answers -->
+      <section class="hide" id="prompts">
+        <h2 id="question-prompt"></h2>
+        <div class="options" id="options"></div>
       </section>
-      <!--Higscore leaderboard-->
-      <section class="Leaderboard">
-        <h2>High Scores</h2>
-        <ol id="leaderboardList"></ol>
-        <button type="submit" id="returnToStart">Try Again</button>
-        <button type="submit" id="clearScores">Clear high Scores</button>
+      <!-- ending record initials -->
+      <section class="hide" id="ending">
+        <h2>Nice Job!</h2>
+        <p>Final Time: <span id="final-time"></span></p>
+        <p>
+          Please enter your initials:
+          <input type="text" id="initials" max="4" />
+          <button id="submit-initials">Submit</button>
+        </p>
       </section>
+
+      <div id="results" class="results hide"></div>
     </main>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/highscore.js"></script>
   </body>
 </html>
-
-<!-- <section class="Scores">
-  <div class="leaderboard-times">
-    leader board times:<span class="leaderboard-values"> JS:22</span>
-  </div>
-</section> -->

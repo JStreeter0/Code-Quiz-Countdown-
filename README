@@ -1,0 +1,39 @@
+<H1>Code Quiz Panic</H1>
+
+<H2>Description Summary</H2>
+
+A timed code quiz on the fundementals of JavaScript that allows you to save your scores to local storage.
+
+<H2>Detailed Description</H2>
+
+When you click the "Lets Begin" button the timer will begin and you will be met with your first prompt. Once you click on one of the answers you will be told whether or not it was correct and moved to the next question. A wrong answer will take 5 seconds off of your remaining time while a correct answer will continue the time as normal. Once you are either out of time or you get through all the questions you will be able to log your initials along with your remaining time which will be viewable up in the leaderboard. Also in the leaderboard is the option to reset your top times or to go ahead and restart the quiz.
+
+<H2>Credits</H2>
+
+<!-- for prompt questions -->
+
+https://www.guru99.com/javascript-interview-questions-answers.html
+
+<H2>License</H2>
+
+MIT License
+
+Copyright (c) 2022 Jstreeter12
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
