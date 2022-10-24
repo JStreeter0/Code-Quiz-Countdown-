@@ -103,7 +103,7 @@ var promptEl = document.getElementById("question-prompt")
   });
 }
 
-
+// answer click to handle moving to next question and alert to wrong/right answer
 function questionClick() {
   if (this.value !== questions[questionIndex].answer) {
     time -= 5;
@@ -130,7 +130,7 @@ function questionClick() {
 }
 
 
-
+// end screen function displaying final time
 function quizEnd() {
   clearInterval(timerId);
   var endScreenEl = document.getElementById("ending");
@@ -141,24 +141,25 @@ function quizEnd() {
 }
 
 
-
+// if time reaches zero game is over
 function timerTick() {
   time--;
   timerEl.textContent = time;
   if (time <= 0) {
+    alert("Times Up!");
     quizEnd();
   }
 }
 
 // save scores to localStorage
 function saveHighscore() {
-  var initials = initialsEl.value.trim();
-  if (initials !== "") {
+  var initial = initialsEl.value.trim();
+  if (initial !== "") {
     var highscores =
       JSON.parse(window.localStorage.getItem("highscores")) || [];
     var newScore = {
       score: time,
-      initials: initials.split
+      initials: initialsEl.value
     };
     highscores.push(newScore);
     window.localStorage.setItem("highscores", JSON.stringify(highscores));
@@ -170,6 +171,7 @@ function checkForEnter(event) {
       saveHighscore();
   }
 }
+
 initialsEl.onkeyup = checkForEnter;
 
 

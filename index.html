@@ -9,7 +9,7 @@
 
   <body>
     <header>
-      <!-- highscore link -->
+      <!--highscore link -->
       <section>
         <a href="score.html"
           ><button class="Leaderboard" id="view-top-scores">
@@ -47,14 +47,24 @@
         <p>Final Time: <span id="final-time"></span></p>
         <p>
           Please enter your initials:
-          <input type="text" id="initials" max="4" />
+          <input type="text" id="initials" max="3" />
           <button id="submit-initials">Submit</button>
         </p>
+      </section>
+
+      <!-- test -->
+
+      <section class="hide" id="scores">
+        <h1>Highscores</h1>
+        <ol id="highscores"></ol>
+
+        <a href="index.html"><button>Retry</button></a>
+        <button id="clear">Clear Leaderboard</button>
       </section>
 
       <div id="results" class="results hide"></div>
     </main>
     <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/highscore.js"></script>
+    <!-- <script src="./assets/js/highscore.js"></script> -->
   </body>
 </html>
