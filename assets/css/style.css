@@ -1,8 +1,16 @@
 * {
-    font-family: Georgia, Times, "Times New Roman", serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: black;
     background-color:white;
-    margin: 0;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: 300px;
+}
+.timer {
+    font-weight: 3rem;
 }
 
 .quiz, .scores {
@@ -12,7 +20,7 @@
 }
 
 p {
-    margin: 15px 15px;
+    margin-top: 10px;
 }
 
 
@@ -26,7 +34,7 @@ p {
 
 .Leaderboard {
     position: absolute;
-    top: 15px;
+    top: 10px;
     left: 15px;
 }
 
@@ -64,14 +72,6 @@ input[type="text"] {
     display: none;
 }
 
-.results {
-    font-style: bold;
-    font-size: 120%;
-    margin-top: 20px;
-    padding-top: 15px;
-    color: #fff;
-    border-top: 2px solid black;
-}
 
 ol {
     padding-left: 15px;

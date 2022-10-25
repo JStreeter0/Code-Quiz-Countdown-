@@ -1,4 +1,4 @@
-
+// print scores to leaderboard page
 function printHighscores() {
   var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
   highscores.sort(function(a, b) {

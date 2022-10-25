@@ -175,9 +175,6 @@ function checkForEnter(event) {
 
 initialsEl.onkeyup = checkForEnter;
 
-
 submitBtnEl.onclick = saveHighscore;
-
-
 
 startBtn.onclick = startQuiz;
